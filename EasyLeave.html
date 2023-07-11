@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Leave Management System Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="EasyLeave.css">
+</head>
+<body>
+  <div class="navbar">
+    <a class="active" href="EasyLeave.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href=""><i class="fa fa-fw fa-user"></i>Profile</a>
+    <a href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>   
+    <a href="login.html"><i class="fa fa-fw fa-user"></i> Logout</a>
+  </div>
+  <div class="dashboard">
+    <h1>Welcome to the Leave Management System</h1>
+    <div class="leave-balance">
+      <h2>Leave Balance</h2>
+      <p>Casual Leave: <span id="Casual-leave"></span></p>
+      <p>Medical Leave: <span id="Medical-leave"></span></p>
+      <p>Comp Off: <span id="Comp Off"></span></p>
+    </div>
+    <div class="leave-eligibility">
+      <h2>Leave Eligibility</h2>
+      <p>You are eligible for <span id="eligibility"></span> days of leave per year.</p>
+    </div>
+    <button class="leave-application-button colorf" onclick="window.location.href='./application.html'">Apply for leave</button>
+   
+  </div>
+  <div class="leave-history">
+  <h2>Previous Leave History</h2>
+  <div class="table-container">
+    <table id="leaveTable">
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Anmol kumak gupta</td>
+        <td>Vacation</td>
+        <td>2023-06-10</td>
+        <td>2023-06-15</td>
+        <td>Pending</td>
+      </tr>
+      <!-- More rows can be added dynamically using JavaScript -->
+    </table>
+  </div>
+</div>
+</body>
+</html>
